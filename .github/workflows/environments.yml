@@ -1,0 +1,19 @@
+name: environemnt approvals
+run-name: prueba con environment approvals
+
+on: 
+  push:
+    branches:
+      - aprendiendo-github-actions
+
+jobs:
+  commit:
+    name: environment approval
+    runs-on: ubuntu-latest
+    environment: dev
+    steps: 
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: se completo approval
+        run: echo 'Termino approval'
+    

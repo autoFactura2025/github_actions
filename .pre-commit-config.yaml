@@ -5,4 +5,4 @@ repos:
     hooks:
     -   id: no-commit-to-branch
         args: [--branch, aprendiendo-github-actions]
-        stage: [pre-commit, pre-push]
+        stages: [pre-commit, pre-push]
